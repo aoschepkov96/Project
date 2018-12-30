@@ -6,16 +6,18 @@
 3.	Установить MySQL (https://dev.mysql.com/downloads/mysql/, при установке отметить галочкой установку MySQL Connector/ Python.
 4.	Обновить команды pip до последней версии (через командную строку с помощью команды python -m pip install --upgrade pip)
 5.	Обновить пакет pandas до последней версии (через командную строку с помощью команды pip install --upgrade pandas)
-# Блок автоматического импорта в базу данных неструктурированных данных
-1. Создать пользователя и БД:
+6. Создать пользователя и БД:
   + Открыть командную строку MySQL Command Line Client
   + Создать нового пользователя: CREATE USER project_user;
   + Создать новую БД: CREATE DATABASE project_db;
   + Предоставить пользователю привилегии на БД: GRANT ALL PRIVILEGES ON project_db.* TO project_user;
   + Обновить привилегии: FLUSH PRIVILEGES;
-2.	Скачать папки «анкеты» и «контракты» по ссылке (https://drive.google.com/drive/folders/1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
-3.	Создайте на своём компьютере папку, присвойте ей какое-либо название на английском языке (далее в инструкции project_folder) и создайте внутри этой папки ещё две папки с названиями: contracts и applications. В папку contracts распакуйте архив с данными по контрактам, а в папку applications распакуйте архив с данными по анкетам кредитных заявок. Важно, чтобы в папках contracts и applications не было никаких подпапок, а сразу находились только файлы с расширением .xlsx). Кроме указанных данных в папках contracts и applications не должно ничего находиться.
-4.	Скачайте xls файл с данными по платежам (payments) и поместите в папку payments проекта (project_folder) (https://drive.google.com/open?id=1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
+7.	Скачать папки «анкеты» и «контракты» по ссылке (https://drive.google.com/drive/folders/1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
+8.	Создайте на своём компьютере папку, присвойте ей какое-либо название на английском языке (далее в инструкции project_folder) и создайте внутри этой папки ещё две папки с названиями: contracts и applications. В папку contracts распакуйте архив с данными по контрактам, а в папку applications распакуйте архив с данными по анкетам кредитных заявок. Важно, чтобы в папках contracts и applications не было никаких подпапок, а сразу находились только файлы с расширением .xlsx). Кроме указанных данных в папках contracts и applications не должно ничего находиться.
+9.	Скачайте xls файл с данными по платежам (payments) и поместите в папку payments проекта (project_folder) (https://drive.google.com/open?id=1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
+10. (Опционально, если хотите для наглядности запускать из Jupyter) Установить Jupyter-Notebook (https://jupyter.org/), либо встроенный в Anaconda (рекомендуется)https://www.anaconda.com/download/). 
+# Блок автоматического импорта в базу данных неструктурированных данных
+1. Запустить скрипт part_1.py из Anaconda Promt с помощью команды python part_1.py
 5.  Если Вы хотите запустить код (для наглядности) из Jupyter Notebook, то: 
    +	Скачайте тетрадку part_1.ipynb и поместите её в созданную вами папку project_folder (https://github.com/kalininiad/Project)
    +	В папке project_folder создайте 4 пустых папки: output_1, output_2, output_3, output_4 (папки для хранения отчетов по каждому блоку заданий) 
