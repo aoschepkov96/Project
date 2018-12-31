@@ -3,7 +3,7 @@
 ### Перед началом работы необходимо:
 1.	Установить Python (при создании была использована версия 3.7, однако более ранние версии должны подойти ( https://www.python.org/downloads/)
 2.	Установить Anaconda (https://www.anaconda.com/download/). 
-3.	Установить MySQL (https://dev.mysql.com/downloads/mysql/, при установке отметить галочкой установку MySQL Connector/ Python.
+3.	Установить MySQL (https://dev.mysql.com/downloads/mysql/, при установке отметить галочкой установку MySQL Connector/ Python. Коннектор также можно установить в командной строке Anaconda *pip install MySQL-connector-python*
 4.	Обновить команды pip до последней версии (через командную строку с помощью команды python -m pip install --upgrade pip)
 5.	Обновить пакет pandas до последней версии (через командную строку с помощью команды pip install --upgrade pandas)
 6. Создать пользователя и БД:
