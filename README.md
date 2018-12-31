@@ -14,7 +14,7 @@
   + Обновить привилегии: FLUSH PRIVILEGES;
 7.	Скачать папки «анкеты» и «контракты» по ссылке (https://drive.google.com/drive/folders/1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
 8.	Создайте на своём компьютере папку, присвойте ей какое-либо название на английском языке (далее в инструкции project_folder) и создайте внутри этой папки ещё две папки с названиями: *contracts, applications, output_1, output_2, output_3, output_4*. В папку contracts распакуйте архив с данными по контрактам, а в папку applications распакуйте архив с данными по анкетам кредитных заявок. Важно, чтобы в папках contracts и applications не было никаких подпапок, а сразу находились только файлы с расширением .xlsx). Кроме указанных данных в папках contracts и applications не должно ничего находиться.
-9.	Скачайте xls файл с данными по платежам (payments) и поместите в папку payments проекта (project_folder) (https://drive.google.com/open?id=1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
+9.	Скачайте xls файл с данными по платежам (payments) и поместите в основную папку проекта там же где лежат скрипты и ipynb-тетрадки (project_folder) (https://drive.google.com/open?id=1VwgP8Vc_RCNAoZK5tWt6aUqdET6cS5vS)
 10. (Опционально, если хотите для наглядности запускать из Jupyter) Установить Jupyter-Notebook (https://jupyter.org/), либо встроенный в Anaconda (рекомендуется)https://www.anaconda.com/download/). 
 # Блок 1. Автоматический импорт в базу данных неструктурированных данных
 1. Запустить скрипт part_1.py из Anaconda Promt с помощью команды *python part_1.py* и следовать инструкциям в командной строке.
