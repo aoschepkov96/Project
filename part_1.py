@@ -61,6 +61,16 @@ print("Вы ввели '" + str(database)+"'")
 
 applications = [f for f in listdir(my_path+'/applications') if isfile(join(my_path+'/applications', f))] 
 contracts = [f for f in listdir(my_path+'/contracts') if isfile(join(my_path+'/contracts', f))]
+app = []
+for i in range(len(applications)):
+    if applications[i][-4:] == 'xlsx':
+        app += [applications[i]]
+con = []
+for i in range(len(contracts)):
+    if contracts[i][-4:] == 'xlsx':
+        con += [contracts[i]]
+applications = app
+contracts = con
 
 
 # In[4]:
