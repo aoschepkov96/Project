@@ -114,8 +114,8 @@ plt.show()
 # In[12]:
 
 
-IV_table['predicive_power'] = np.where((IV_table.IV < 0.02), 'useless',
-                                       np.where((IV_table.IV >= 0.02) & (IV_table.IV <= 0.1), 'weak',
+IV_table['predicive_power'] = np.where((IV_table.IV < 0.03), 'useless',
+                                       np.where((IV_table.IV >= 0.03) & (IV_table.IV <= 0.1), 'weak',
                                                np.where((IV_table.IV > 0.1) & (IV_table.IV <= 0.3), 'medium',
                                                        np.where((IV_table.IV > 0.3) & (IV_table.IV <= 0.5), 'strong', 'suspicious'))))
                                        
